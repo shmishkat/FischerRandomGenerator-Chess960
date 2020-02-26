@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A29CF51E230338D40076A2CE /* PieceIcons in Resources */ = {isa = PBXBuildFile; fileRef = A29CF51D230338D40076A2CE /* PieceIcons */; };
+		A29CF52023033FB30076A2CE /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CF51F23033FB30076A2CE /* Call.swift */; };
 		A2B075AA23030967002C89CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B075A923030967002C89CB /* AppDelegate.swift */; };
 		A2B075AC23030967002C89CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B075AB23030967002C89CB /* ViewController.swift */; };
 		A2B075AF23030967002C89CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B075AD23030967002C89CB /* Main.storyboard */; };
 		A2B075B123030968002C89CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B075B023030968002C89CB /* Assets.xcassets */; };
 		A2B075B423030968002C89CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B075B223030968002C89CB /* LaunchScreen.storyboard */; };
+		A2B075BC23031F58002C89CB /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B075BB23031F58002C89CB /* Resources.swift */; };
+		A2B075BE23032652002C89CB /* allPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B075BD23032652002C89CB /* allPositions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A29CF51D230338D40076A2CE /* PieceIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PieceIcons; sourceTree = "<group>"; };
+		A29CF51F23033FB30076A2CE /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
 		A2B075A623030967002C89CB /* Fischer Random Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fischer Random Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B075A923030967002C89CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2B075AB23030967002C89CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		A2B075B023030968002C89CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B075B323030968002C89CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2B075B523030968002C89CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B075BB23031F58002C89CB /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		A2B075BD23032652002C89CB /* allPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allPositions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			children = (
 				A2B075A823030967002C89CB /* Fischer Random Generator */,
 				A2B075A723030967002C89CB /* Products */,
+				A29CF51D230338D40076A2CE /* PieceIcons */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +65,13 @@
 			children = (
 				A2B075A923030967002C89CB /* AppDelegate.swift */,
 				A2B075AB23030967002C89CB /* ViewController.swift */,
+				A2B075BD23032652002C89CB /* allPositions.swift */,
 				A2B075AD23030967002C89CB /* Main.storyboard */,
 				A2B075B023030968002C89CB /* Assets.xcassets */,
 				A2B075B223030968002C89CB /* LaunchScreen.storyboard */,
 				A2B075B523030968002C89CB /* Info.plist */,
+				A2B075BB23031F58002C89CB /* Resources.swift */,
+				A29CF51F23033FB30076A2CE /* Call.swift */,
 			);
 			path = "Fischer Random Generator";
 			sourceTree = "<group>";
@@ -122,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29CF51E230338D40076A2CE /* PieceIcons in Resources */,
 				A2B075B423030968002C89CB /* LaunchScreen.storyboard in Resources */,
 				A2B075B123030968002C89CB /* Assets.xcassets in Resources */,
 				A2B075AF23030967002C89CB /* Main.storyboard in Resources */,
@@ -135,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B075BC23031F58002C89CB /* Resources.swift in Sources */,
 				A2B075AC23030967002C89CB /* ViewController.swift in Sources */,
+				A29CF52023033FB30076A2CE /* Call.swift in Sources */,
+				A2B075BE23032652002C89CB /* allPositions.swift in Sources */,
 				A2B075AA23030967002C89CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BF7XT84PD2;
 				INFOPLIST_FILE = "Fischer Random Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BF7XT84PD2;
 				INFOPLIST_FILE = "Fischer Random Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
